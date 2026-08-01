@@ -1,28 +1,489 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="SARAVANAMUTHU S - Backend Software Developer specializing in Go, Node.js, Python, and scalable system architecture. 3+ years of experience building robust applications." />
-    <meta name="keywords" content="backend developer, Go developer, Node.js, Python, software engineer, full-stack developer, MongoDB, Kafka, Redis" />
-    <meta name="author" content="SARAVANAMUTHU S" />
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="SARAVANAMUTHU S - Backend Software Developer" />
-    <meta property="og:description" content="Experienced backend developer with expertise in Go, Node.js, Python, and modern backend technologies. Building scalable applications and robust system architectures." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://saravanamuthu.dev" />
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="SARAVANAMUTHU S - Backend Software Developer" />
-    <meta name="twitter:description" content="Experienced backend developer with expertise in Go, Node.js, Python, and modern backend technologies. Building scalable applications and robust system architectures." />
-    
-    <title>SARAVANAMUTHU S - Backend Software Developer | Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Saravanamuthu S — Senior Software Engineer specialising in backend systems, autonomous multi-agent AI platforms and multi-cloud infrastructure. 4 years building production-grade Go services used by thousands." />
+  <meta name="author" content="Saravanamuthu S" />
+  <meta name="theme-color" content="#F6F3EB" />
+
+  <title>Saravanamuthu S — AI Platform & Backend Engineer</title>
+
+  <!-- Fonts: Fraunces (editorial serif) · Newsreader (body serif) · Caveat & Kalam (hand-drawn) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Caveat:wght@500;600;700&family=Kalam:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' font-family='Georgia,serif'%3E%E2%9C%8F%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+<!-- ============================================================= -->
+<!-- Hidden SVG defs: pencil filters, hatch patterns, doodles       -->
+<!-- ============================================================= -->
+<svg class="svg-defs" aria-hidden="true" focusable="false" width="0" height="0">
+  <defs>
+    <!-- Hand-drawn "roughen" filters (a few seeds for variety) -->
+    <filter id="rough-a" x="-4%" y="-8%" width="108%" height="116%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.011" numOctaves="2" seed="3" result="n" />
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="4.5" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+    <filter id="rough-b" x="-4%" y="-8%" width="108%" height="116%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="17" result="n" />
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3.4" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+    <filter id="rough-c" x="-6%" y="-12%" width="112%" height="124%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" seed="41" result="n" />
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.6" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+
+    <!-- Paper grain -->
+    <filter id="paper-grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="g" />
+      <feColorMatrix in="g" type="saturate" values="0" />
+      <feComponentTransfer><feFuncA type="linear" slope="0.05" /></feComponentTransfer>
+      <feComposite operator="over" in2="SourceGraphic" />
+    </filter>
+
+    <!-- Cross-hatch pattern for shading -->
+    <pattern id="hatch" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="currentColor" stroke-width="1" opacity="0.45" />
+    </pattern>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Top anchor (a non-sticky target so "back to top" actually scrolls) -->
+<span id="top" aria-hidden="true"></span>
+
+<!-- ============================================================= -->
+<!-- Navigation                                                     -->
+<!-- ============================================================= -->
+<header class="site-nav">
+  <a class="nav-mark" href="#top" aria-label="Home">
+    <span class="nav-mark__glyph">S</span>
+    <span class="nav-mark__name">Saravanamuthu&nbsp;S</span>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="Saravanamuthu_S_Resume.pdf" download>Résumé</a>
+    <a class="nav-cta-link" href="#contact"> <span class="nav-cta">Say hello</span>  </a>
+  </nav>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="main">
+
+  <!-- ========================================================= -->
+  <!-- Hero                                                       -->
+  <!-- ========================================================= -->
+  <section class="hero" aria-labelledby="hero-name">
+    <div class="hero__intro">
+      <div class="hero__hello">
+        <span class="hero__avatar" aria-hidden="true">
+          <img src="assets/img/portrait.jpg" alt="" width="864" height="1184" decoding="async" />
+        </span>
+        <p class="eyebrow handwrite">Hello there — I'm</p>
+      </div>
+      <h1 class="hero__name" id="hero-name">
+        <span>
+          Saravanamuthu <span class="hero__initial"> S</span>
+        </span>
+        <svg class="scribble-underline" viewBox="0 0 420 26" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M4 15 C 70 4, 150 24, 210 13 S 360 4, 416 16" />
+        </svg>
+      </h1>
+      <p class="hero__role">
+        Senior Software Engineer
+        <span class="dot">·</span>
+        AI Platform &amp; Backend&nbsp;Engineer
+      </p>
+      <p class="hero__pitch">
+        I build production-grade backend systems, <em>autonomous multi-agent AI
+        platforms</em> and multi-cloud deployment tooling used by thousands of
+        people — from real-time distributed architecture and self-improving
+        learning layers down to squeezing every last millisecond out of
+        high-throughput Go services.
+      </p>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary sketch-box" href="#experience">
+          See my work
+          <svg class="btn-arrow" viewBox="0 0 40 16" aria-hidden="true">
+            <path d="M2 8 H34 M27 2 L36 8 L27 14" />
+          </svg>
+        </a>
+        <a class="btn btn--ghost sketch-box" href="Saravanamuthu_S_Resume.pdf" download>
+          Download résumé
+          <svg class="btn-arrow" viewBox="0 0 24 24" aria-hidden="true" style="width:18px;height:18px;">
+            <path d="M12 3 v12 M7 11 l5 5 l5 -5 M5 20 h14" />
+          </svg>
+        </a>
+        <a class="btn btn--ghost sketch-box" href="#contact">Get in touch</a>
+      </div>
+
+      <ul class="hero__contacts">
+        <li>
+          <a href="mailto:saravanamuthuise@gmail.com">
+            <svg class="mini-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6 h18 v12 h-18 z M3 7 l9 6 l9 -6" /></svg>
+            saravanamuthuise@gmail.com
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/saravanamuthu-s/" target="_blank" rel="noopener noreferrer">
+            <svg class="mini-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4 h16 v16 h-16 z M7 10 v7 M7 7 v.2 M11 17 v-5 q0-2 3-2 t3 3 v4" /></svg>
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Hand-drawn constellation of the stack -->
+    <div class="hero__sketch" aria-hidden="true">
+      <div class="constellation" data-tilt>
+        <svg class="constellation__wires" viewBox="0 0 360 360" preserveAspectRatio="xMidYMid meet">
+          <g class="wire">
+            <path d="M180 180 L 180 58" /><path d="M180 180 L 300 120" />
+            <path d="M180 180 L 306 230" /><path d="M180 180 L 196 306" />
+            <path d="M180 180 L 62 250" /><path d="M180 180 L 60 118" />
+          </g>
+        </svg>
+
+        <div class="orbit">
+          <span class="node node--go"    style="--x:50%; --y:12%;"> <span class="node__label">Go</span><svg viewBox="0 0 48 48"><path d="M9 20 h10 M7 27 h14 M22 15 q10 -5 18 2 q6 8 -2 15 q-9 6 -17 -1 q-4 -5 1 -12 z M30 24 h.2 M35 22 h.2"/></svg></span>
+          <span class="node node--ai"    style="--x:84%; --y:31%;"> <span class="node__label">AI Agents</span><svg viewBox="0 0 48 48"><path d="M16 14 h16 v13 h-16 z M20 32 h8 v4 h-8 z M24 27 v5 M20 19 h.2 M28 19 h.2 M12 20 v5 M36 20 v5 M24 10 v4"/></svg></span>
+          <span class="node node--data"  style="--x:85%; --y:66%;"> <span class="node__label">Data</span><svg viewBox="0 0 48 48"><path d="M14 14 q10 -5 20 0 v20 q-10 5 -20 0 z M14 14 q10 5 20 0 M14 24 q10 5 20 0"/></svg></span>
+          <span class="node node--rt"    style="--x:54%; --y:89%;"> <span class="node__label">Real-time</span><svg viewBox="0 0 48 48"><path d="M26 8 L14 27 h9 l-3 13 L34 21 h-9 z"/></svg></span>
+          <span class="node node--cloud" style="--x:14%; --y:73%;"> <span class="node__label">Cloud</span><svg viewBox="0 0 48 48"><path d="M16 30 q-7 0 -7 -6 q0 -6 7 -6 q1 -7 9 -7 q8 0 8 8 q6 0 6 6 q0 5 -6 5 z"/></svg></span>
+          <span class="node node--mcp"   style="--x:13%; --y:29%;"> <span class="node__label">MCP</span><svg viewBox="0 0 48 48"><path d="M13 24 h6 M29 24 h6 M19 24 a5 5 0 0 1 10 0 M24 12 v7 M24 29 v7 M20 12 h8 M20 36 h8"/></svg></span>
+        </div>
+
+        <div class="constellation__core sketch-box">
+          <span class="constellation__mono">S</span>
+          <span class="constellation__tag handwrite">systems, drawn by hand</span>
+        </div>
+      </div>
+      <p class="sketch-caption handwrite">the stack I live in ↑</p>
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- Stats                                                      -->
+  <!-- ========================================================= -->
+  <section class="stats" aria-label="By the numbers">
+    <div class="stat">
+      <span class="stat__num" data-count="4" data-suffix="+">4+</span>
+      <span class="stat__label">years shipping<br />production systems</span>
+    </div>
+    <div class="stat">
+      <span class="stat__num" data-count="1400" data-suffix="+">1,400+</span>
+      <span class="stat__label">skills integrated into<br />the Super Agent platform</span>
+    </div>
+    <div class="stat">
+      <span class="stat__num" data-count="30" data-prefix="~" data-suffix="%">~30%</span>
+      <span class="stat__label">less RAM under<br />peak production load</span>
+    </div>
+    <div class="stat">
+      <span class="stat__num" data-count="750" data-suffix="+">750+</span>
+      <span class="stat__label">components in the<br />AIA workflow catalog</span>
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- About                                                      -->
+  <!-- ========================================================= -->
+  <section class="about section" id="about" aria-labelledby="about-h">
+    <div class="section__head">
+      <span class="section__index handwrite">01</span>
+      <h2 class="section__title" id="about-h" data-underline>About</h2>
+    </div>
+    <div class="about__grid">
+      <div class="about__lead">
+        <p>
+          I'm a software engineer who likes owning the hard, unglamorous middle
+          of a product — the part between a clever idea and something thousands of
+          people can actually rely on. My home turf is <strong>autonomous multi-agent
+          systems</strong>, <strong>LLM agent orchestration</strong>, <strong>context
+          engineering</strong> and <strong>high-throughput Go services</strong>.
+        </p>
+        <p>
+          Over the last four years I've taken critical systems end-to-end — from the
+          first architecture sketch through to performance tuning in production, and
+          even a <strong>self-improving learning layer</strong> that makes the platform
+          get better with every run — while working shoulder-to-shoulder with product
+          and engineering to ship things that matter.
+        </p>
+
+        <aside class="sticky-note" data-tilt>
+          <p class="handwrite sticky-note__text">
+            &ldquo;Design it so it holds up at 3&nbsp;a.m. under real traffic —
+            then make it fast.&rdquo;
+          </p>
+          <span class="sticky-note__by handwrite">— how I think about systems</span>
+        </aside>
+      </div>
+
+      <div class="about__aside">
+        <figure class="portrait sketch-box">
+          <img src="assets/img/portrait.jpg" alt="Portrait photo of Saravanamuthu S"
+               width="864" height="1184" loading="lazy" decoding="async" />
+        </figure>
+        <span class="portrait__cap handwrite">yep, that's me</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- Experience                                                 -->
+  <!-- ========================================================= -->
+  <section class="experience section" id="experience" aria-labelledby="exp-h">
+    <div class="section__head">
+      <span class="section__index handwrite">02</span>
+      <h2 class="section__title" id="exp-h" data-underline>Experience</h2>
+    </div>
+
+    <div class="timeline">
+      <!-- Adya.ai -->
+      <article class="job" data-reveal>
+        <div class="job__marker" aria-hidden="true"></div>
+        <header class="job__head">
+          <div>
+            <h3 class="job__role">Senior Software Engineer</h3>
+            <p class="job__company">Adya.ai</p>
+          </div>
+          <span class="job__when handwrite">Aug 2023 — Present</span>
+        </header>
+
+        <div class="job__groups">
+          <div class="job-group sketch-box">
+            <h4 class="job-group__title">Autonomous Multi-Agent Platform (SAI)</h4>
+            <ul class="ticks">
+              <li>Architected the <strong>supervisor core of SAI</strong>, an autonomous multi-agent delivery system that turns a plain-language request into delivered artifacts — classifying intent, generating multi-phase plans, delegating to specialist agents, and running independent steps in parallel through a <strong>DAG engine</strong> with dependency resolution, retries and cascade-failure handling.</li>
+              <li>Re-architected the skill system into a <strong>central skill registry</strong> — metadata indexed in a <strong>vector database</strong>, raw definitions in <strong>MongoDB</strong> — equipping 1,400+ skills on demand at runtime and <strong>auto-installing</strong> new capabilities from an online marketplace when no local match exists.</li>
+              <li>Engineered a <strong>3-layer context-management system (Auto Compact)</strong> — cross-request, per-call and per-tool-call compaction — so long agent-building sessions run unbounded without hitting LLM token limits.</li>
+              <li>Built <strong>HAA (Human Assistant Agent)</strong> on a per-workspace VM context layer that stores and retrieves workflow context, memory and session summaries — letting the assistant auto-answer user questions on their behalf.</li>
+              <li>Added <strong>human-in-the-loop control</strong> (plan approve / modify / reject, mid-run questions) and <strong>multi-channel engagement</strong> — WhatsApp, Email, In-App and Web Push — so users can answer, check status and steer long runs from anywhere.</li>
+            </ul>
+          </div>
+
+          <div class="job-group sketch-box">
+            <h4 class="job-group__title">AI Workflow Automation (AIA)</h4>
+            <ul class="ticks">
+              <li>Re-architected the natural-language-to-workflow builder into a <strong>master-LLM recursive tool loop</strong> that orchestrates specialist sub-agents (requirement gathering, component prediction, flow connection, validation &amp; repair), grounded in a <strong>750+ component catalog</strong> (including MCPs) via vector retrieval.</li>
+              <li>Bootstrapped the knowledge base by running real use-cases through AIA's <strong>own synthesis engine</strong> to generate <strong>~2,000 domain-segmented reference workflows</strong>, fed back as grounding data to strengthen the component ontology, retrieval and cold-start learning.</li>
+              <li>Streamed every node and edge <strong>live to the canvas</strong> on create and update paths, with structural validation and one-shot automated repair of malformed flows.</li>
+            </ul>
+          </div>
+
+          <div class="job-group sketch-box">
+            <h4 class="job-group__title">Self-Improving Learning Layer (ESLL)</h4>
+            <ul class="ticks">
+              <li><strong>The platform learns from its own results and gets better with every build.</strong> Architected <strong>ESLL</strong>, a self-improving, <strong>event-sourced learning layer</strong> for generative AI: it observes each decision and its context, extracts durable knowledge from behavioural telemetry, injects that knowledge into future decisions under a token budget, and attributes outcomes back to the knowledge that shaped them — <strong>promoting what works, demoting what doesn't, with no gradient training</strong>.</li>
+              <li>Deployed ESLL on the AIA builder to improve workflow synthesis — using <strong>materialized projections</strong> for credit assignment and <strong>demand-signal extraction</strong> to surface capability gaps as a product-roadmap input.</li>
+            </ul>
+          </div>
+
+          <div class="job-group sketch-box">
+            <h4 class="job-group__title">Backend, Data &amp; Platform Engineering</h4>
+            <ul class="ticks">
+              <li>Designed a <strong>no-code ETL platform</strong> across major databases, cloud storage and SaaS sources, then evolved it into a fully <strong>agentic data pipeline</strong> driven by natural-language conversation.</li>
+              <li>Built real-time collaboration and streaming with <strong>WebSockets</strong> and <strong>Server-Sent Events</strong> for live concurrent editing and low-latency updates.</li>
+              <li>Cut <strong>~30% RAM</strong> under peak load through targeted indexing, Redis caching and MongoDB connection-pool tuning; handled burst traffic with <strong>Go routines and channels</strong> at stable latency.</li>
+              <li>Integrated multiple <strong>MCP servers</strong> and extensible components for modular, configurable agent workflows at scale.</li>
+            </ul>
+          </div>
+
+          <div class="job-group sketch-box">
+            <h4 class="job-group__title">Cloud, Infrastructure &amp; Leadership</h4>
+            <ul class="ticks">
+              <li>Architected <strong>Cloud Studio</strong>, a unified PaaS / SaaS deployment platform for AI agents; managed multi-cloud infrastructure hands-on — <strong>VMs and AKS on Azure</strong>, Compute VMs on GCP, Bedrock LLM access on AWS — with <strong>Azure AI Foundry</strong> for model and key management.</li>
+              <li>Maintained Dockerised service pipelines, Jenkins deployments and Nginx configuration for consistent environments.</li>
+              <li>Mentored engineers and drove architectural decisions; represented Adya.ai at launch events and workshops, and served as <strong>Lead Jury</strong> at the SECE hackathon.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Eunimart -->
+      <article class="job" data-reveal>
+        <div class="job__marker" aria-hidden="true"></div>
+        <header class="job__head">
+          <div>
+            <h3 class="job__role">Software Engineer Intern</h3>
+            <p class="job__company">Eunimart</p>
+          </div>
+          <span class="job__when handwrite">Aug 2022 — Aug 2023</span>
+        </header>
+
+        <div class="job__groups">
+          <div class="job-group sketch-box">
+            <h4 class="job-group__title">Backend Engineering — ONDC &amp; E-Commerce</h4>
+            <ul class="ticks">
+              <li>Engineered backend services for a centralised e-commerce platform fully compliant with <strong>ONDC</strong> protocol standards using Go and Node.js.</li>
+              <li>Built and enhanced the <strong>ONEST</strong> platform — a course provider–seeker marketplace and a job provider–seeker marketplace on one unified backend.</li>
+              <li>Developed a <strong>Reconciliation Service Provider (RSP)</strong> under ONDC to automate transaction reconciliation and settlement.</li>
+              <li>Integrated banking partners including <strong>HSBC, IDFC and NPCI</strong> for secure, automated reconciliation pipelines.</li>
+              <li>Connected marketplaces, webstores and logistics providers for omnichannel seller operations — strong end-to-end ownership of production backend.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- Skills                                                     -->
+  <!-- ========================================================= -->
+  <section class="skills section" id="skills" aria-labelledby="skills-h">
+    <div class="section__head">
+      <span class="section__index handwrite">03</span>
+      <h2 class="section__title" id="skills-h" data-underline>Toolkit</h2>
+    </div>
+
+    <div class="skills__grid">
+      <div class="skill-card sketch-box" data-reveal>
+        <h3 class="skill-card__title">Languages</h3>
+        <ul class="chips">
+          <li>Go (Golang)</li><li>Node.js</li><li>JavaScript</li><li>Python (working knowledge)</li>
+        </ul>
+      </div>
+      <div class="skill-card sketch-box" data-reveal>
+        <h3 class="skill-card__title">Backend</h3>
+        <ul class="chips">
+          <li>REST API Design</li><li>Microservices</li><li>WebSockets</li><li>Server-Sent Events</li><li>Kafka</li>
+        </ul>
+      </div>
+      <div class="skill-card sketch-box" data-reveal>
+        <h3 class="skill-card__title">AI / LLMs</h3>
+        <ul class="chips">
+          <li>Agentic AI</li><li>Multi-Agent Orchestration</li><li>LLM Integration</li><li>Model Context Protocol</li><li>Context Engineering</li><li>RAG / Vector Retrieval</li><li>Self-Improving Learning Systems</li><li>Browser-Use</li>
+        </ul>
+      </div>
+      <div class="skill-card sketch-box" data-reveal>
+        <h3 class="skill-card__title">Data</h3>
+        <ul class="chips">
+          <li>MongoDB</li><li>Redis</li><li>PostgreSQL</li><li>Vector DB (Milvus / Zilliz)</li><li>ETL Pipelines</li><li>Connection Pool Optimization</li>
+        </ul>
+      </div>
+      <div class="skill-card sketch-box" data-reveal>
+        <h3 class="skill-card__title">Cloud &amp; DevOps</h3>
+        <ul class="chips">
+          <li>Azure VM</li><li>Azure AKS</li><li>Azure AI Foundry</li><li>GCP Compute</li><li>AWS Bedrock</li><li>Docker</li><li>Jenkins</li><li>Nginx</li><li>PaaS / SaaS</li>
+        </ul>
+      </div>
+      <div class="skill-card sketch-box" data-reveal>
+        <h3 class="skill-card__title">Concepts</h3>
+        <ul class="chips">
+          <li>Distributed Systems</li><li>Real-Time Architectures</li><li>System Design</li><li>Performance</li><li>Concurrency</li><li>DAG Orchestration</li><li>Event Sourcing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- Education                                                  -->
+  <!-- ========================================================= -->
+  <section class="education section" id="education" aria-labelledby="edu-h">
+    <div class="section__head">
+      <span class="section__index handwrite">04</span>
+      <h2 class="section__title" id="edu-h" data-underline>Education</h2>
+    </div>
+
+    <div class="edu-card sketch-box" data-reveal>
+      <svg class="edu-card__cap" viewBox="0 0 64 48" aria-hidden="true">
+        <path d="M4 20 L32 8 L60 20 L32 32 Z" />
+        <path d="M18 26 v10 q14 8 28 0 v-10" />
+        <path d="M60 20 v13" />
+      </svg>
+      <div class="edu-card__body">
+        <h3 class="edu-card__degree">B.E. — Information Science &amp; Engineering</h3>
+        <p class="edu-card__school">Bannari Amman Institute of Technology, Sathyamangalam</p>
+      </div>
+      <span class="edu-card__year handwrite">Class of 2023</span>
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- Interests                                                  -->
+  <!-- ========================================================= -->
+  <section class="interests section" aria-labelledby="int-h">
+    <div class="section__head">
+      <span class="section__index handwrite">05</span>
+      <h2 class="section__title" id="int-h" data-underline>Beyond the terminal</h2>
+    </div>
+
+    <ul class="interest-list">
+      <li class="interest" data-reveal>
+        <svg class="interest__icon" viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="12" cy="14" r="4" /><circle cx="34" cy="12" r="4" /><circle cx="24" cy="34" r="4" /><circle cx="38" cy="32" r="3" />
+          <path d="M15 15 L31 13 M14 17 L22 31 M31 15 L26 31 M36 15 L37 29 M27 34 L35 33" />
+        </svg>
+        <span>System Design &amp; Optimization</span>
+      </li>
+      <li class="interest" data-reveal>
+        <svg class="interest__icon" viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M24 8 q10 0 10 10 q0 6 -5 9 v5 h-10 v-5 q-5 -3 -5 -9 q0 -10 10 -10 z M20 37 h8 M21 41 h6" />
+        </svg>
+        <span>Problem Solving</span>
+      </li>
+      <li class="interest" data-reveal>
+        <svg class="interest__icon" viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M10 34 q-4 -14 10 -20 q14 -5 18 4 M20 14 l16 4 M13 26 l14 4" />
+          <circle cx="12" cy="36" r="4" />
+        </svg>
+        <span>Badminton</span>
+      </li>
+      <li class="interest" data-reveal>
+        <svg class="interest__icon" viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M8 16 h7 l3 -4 h12 l3 4 h7 v20 h-32 z" /><circle cx="24" cy="26" r="7" />
+        </svg>
+        <span>Photography</span>
+      </li>
+      <li class="interest" data-reveal>
+        <svg class="interest__icon" viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="15" /><path d="M18 30 l4 -12 l8 -4 l-4 12 z" /><circle cx="24" cy="24" r="1.5" />
+        </svg>
+        <span>Traveling</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- Contact                                                    -->
+  <!-- ========================================================= -->
+  <section class="contact section" id="contact" aria-labelledby="contact-h">
+    <div class="contact__inner sketch-box" data-reveal>
+      <p class="eyebrow handwrite">Open to interesting problems</p>
+      <h2 class="contact__title" id="contact-h">Let's build something<br />that holds up.</h2>
+      <p class="contact__sub">
+        Backend architecture, agentic AI, real-time systems — if it needs to be
+        fast, reliable and a little bit clever, I'd love to hear about it.
+      </p>
+      <div class="contact__actions">
+        <a class="btn btn--primary sketch-box" href="mailto:saravanamuthuise@gmail.com">
+          Email me
+          <svg class="btn-arrow" viewBox="0 0 40 16" aria-hidden="true"><path d="M2 8 H34 M27 2 L36 8 L27 14" /></svg>
+        </a>
+        <a class="btn btn--ghost sketch-box" href="Saravanamuthu_S_Resume.pdf" download>Download résumé</a>
+        <a class="btn btn--ghost sketch-box" href="https://www.linkedin.com/in/saravanamuthu-s/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <span class="handwrite site-foot__sign">Saravanamuthu&nbsp;S</span>
+  <p>Senior Software Engineer · AI Platform &amp; Backend Engineer · Coimbatore, India</p>
+  <p class="site-foot__fine">Hand-drawn in the browser — no two lines quite the same.</p>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
 </html>
