@@ -1,0 +1,28 @@
+{
+  "name": "saravanamuthu-portfolio",
+  "version": "1.0.0",
+  "description": "Saravanamuthu S — Portfolio website showcasing AI Platform & Backend Engineering work",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saravanamuthu-123/My-Portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "vercel",
+    "analytics"
+  ],
+  "author": "Saravanamuthu S",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saravanamuthu-123/My-Portfolio/issues"
+  },
+  "homepage": "https://github.com/saravanamuthu-123/My-Portfolio#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
